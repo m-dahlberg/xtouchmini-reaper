@@ -1,0 +1,39 @@
+# xtouchmini daemon configuration.
+# Copied to ~/.config/xtouchmini/config.toml by install.sh, which never
+# overwrites an existing one. Unknown keys are an error, not a silent no-op.
+
+[osc]
+host = "127.0.0.1"
+# REAPER listens here. Must match the control surface's receive port.
+# 8000 belongs to the ShuttleXpress bridge; do not reuse it.
+send_port = 8010
+# We listen here for REAPER's feedback, which drives the LED rings.
+listen_host = "127.0.0.1"
+listen_port = 9010
+
+[device]
+# Matched against the rtmidi port name, case-insensitively. Never match on the
+# ALSA card id: this machine has a RODE "Mini" next to the X-Touch "MINI".
+port_match = "X-TOUCH MINI"
+# Set in the X-TOUCH Editor. The encoders ship "absolute", which has dead zones
+# at both ends of their travel -- see docs/protocol.md.
+# One of: absolute, relative1, relative2, relative3
+encoding = "relative1"
+reconnect_interval = 1.0
+
+[feel]
+# One detent moves this much of a parameter's 0..1 range. The hardware already
+# accelerates (3 counts on a fast click, 1 on a slow one), so do not add a
+# curve here as well.
+coarse_step = 0.0078125     # 1/128
+fine_step = 0.0009765625    # 1/1024, while an encoder is pushed in
+# How close the fader must come to the current volume before it takes over.
+pickup_epsilon = 0.02
+# A push shorter than this that moved nothing is a reset-to-default.
+reset_max_hold = 0.6
+# How often the lamps are repainted unconditionally. The layer button sends no
+# MIDI and the device keeps LED state per layer, so a layer switch clears every
+# lamp with nothing to detect it. Lower is snappier, at 24 messages a repaint.
+led_refresh_interval = 1.0
+# How much a tapered detent is slowed at the fine end of its travel.
+taper_floor = 0.25

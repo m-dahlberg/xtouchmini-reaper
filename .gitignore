@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+# Test fixtures — regenerable, see test/make_fixture.py
+*.wav
+
+# Local tool state
+.cache/
+.pytest_cache/
+.claude/settings.local.json

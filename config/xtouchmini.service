@@ -1,0 +1,15 @@
+[Unit]
+Description=X-Touch Mini to REAPER bridge
+Documentation=file:%h/repos/XtouchMini/README.md
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/xtouchmini run
+Restart=always
+RestartSec=2
+
+# No device Requires=: the daemon waits for the X-Touch itself and keeps the
+# OSC sockets open across an unplug, so REAPER never sees the surface vanish.
+
+[Install]
+WantedBy=default.target

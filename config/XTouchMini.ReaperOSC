@@ -1,0 +1,113 @@
+# X-Touch Mini bridge -- REAPER OSC pattern file
+#
+# Install to ~/.config/REAPER/OSC/XTouchMini.ReaperOSC (REAPER only scans that
+# folder when the dialog opens, so reopen it after copying), then add the
+# surface in Preferences -> Control/OSC/web -> Add -> OSC:
+#     Mode          Configure device IP+local port
+#     Local port    8010            <- the daemon sends here
+#     Device IP     127.0.0.1
+#     Device port   9010            <- REAPER sends feedback here
+#     Pattern       XTouchMini
+# "Local port [receive only]" also works; the feedback half is an
+# optimisation, not a requirement. See README.md.
+# Port 8000 and csurf_0 belong to the ShuttleXpress bridge; leave them alone.
+#
+# Derived from Default.ReaperOSC, cut down to what the bridge actually uses.
+# Everything omitted is feedback REAPER would otherwise send us 30 times a
+# second for controls this device does not have.
+
+# The bank has to cover every track you might put a plugin on, because
+# /track/<N>/ is an index into THIS BANK, not a REAPER track number.
+#
+# Measured, with a plugin focused on track 2 while track 2 was selected:
+#
+#   /track/2/fx/2/fxparam/7/value   ignored
+#   /track/1/fx/2/fxparam/7/value   moved it
+#
+# With DEVICE_TRACK_COUNT 1 the only addressable slot is 1, and
+# DEVICE_TRACK_FOLLOWS LAST_TOUCHED points it at the SELECTED track. That is
+# right for the fader, which is meant to follow the selection, and wrong for
+# the encoders, which drive the focused FX wherever it lives. Select a
+# different track and every encoder write either vanishes or -- worse -- lands
+# on whatever plugin sits at the same chain position on the selected track.
+#
+# A bank this wide costs nothing here: the only track feedback declared below
+# is the bare /track/... form, which describes the current track alone. Only
+# patterns containing @ are expanded per slot. Raise this past 128 if a project
+# ever puts a controllable plugin on a higher-numbered track.
+DEVICE_TRACK_COUNT 128
+DEVICE_SEND_COUNT 0
+DEVICE_RECEIVE_COUNT 0
+DEVICE_FX_COUNT 1
+DEVICE_MARKER_COUNT 0
+DEVICE_REGION_COUNT 0
+
+# 128 parameters in one bank, so /fxparam/<K>/value feedback arrives for any
+# parameter index up to 127 without the daemon ever having to page the bank.
+# Parameters above 127 still get *written* correctly, because writes use the
+# explicit /track/@/fx/@/fxparam/@/value form -- they just get no LED feedback.
+DEVICE_FX_PARAM_COUNT 128
+DEVICE_FX_INST_PARAM_COUNT 128
+
+# The device's notion of "current track" follows REAPER, never the other way
+# round: the panel is the only thing allowed to decide what is active. This
+# governs the bare /track/... address (the fader) only -- the encoders address
+# their track by absolute number and are unaffected by the selection.
+REAPER_TRACK_FOLLOWS DEVICE
+DEVICE_TRACK_FOLLOWS LAST_TOUCHED
+DEVICE_TRACK_BANK_FOLLOWS DEVICE
+
+# FOCUSED, not LAST_TOUCHED: the panel enforces strict focus, and this keeps
+# REAPER's feedback pointed at the same plugin the panel is showing.
+DEVICE_FX_FOLLOWS FOCUSED
+
+DEVICE_EQ INSERT
+DEVICE_ROTARY_CENTER 0
+
+# --- daemon -> REAPER ------------------------------------------------------
+
+# Reserved buttons bound to REAPER actions. The @ captures a named command ID
+# such as _RS<sha1>, which is how the registered panel actions are fired.
+ACTION t/action/@ s/action/str i/action
+
+# Fader. BOTH forms are declared, and the daemon sends the explicit one.
+#
+# The bare /track/volume goes to the device's own track, which
+# DEVICE_TRACK_FOLLOWS pins to the LAST TOUCHED track "in the REAPER window"
+# (REAPER's words). Selecting a track from another control surface does not
+# touch it in that sense, so the bare form goes on driving the previous track
+# while the panel correctly shows the new one -- the fader appears stuck to a
+# track you have already left. Only a mouse click updates it.
+#
+# The explicit form takes the track number from state.json, which reads the
+# real selection every frame however it was made. Same reasoning as the FX
+# writes above: the panel is the authority, not REAPER's notion of current.
+#
+# The @ form means REAPER sends volume feedback for every track in the bank,
+# not just one; the daemon keeps only the selected track's and drops the rest.
+TRACK_VOLUME n/track/volume n/track/@/volume
+TRACK_VOLUME s/track/volume/str
+TRACK_NAME s/track/name
+TRACK_NUMBER s/track/number/str
+
+# Encoders and mappable buttons. The explicit track/fx/param form is what the
+# daemon writes with -- resolved indices come from state.json, so REAPER's own
+# idea of what is focused can never disagree with the panel's.
+FX_PARAM_VALUE n/track/@/fx/@/fxparam/@/value
+
+# --- REAPER -> daemon (feedback) -------------------------------------------
+
+# Drives the LED rings, and keeps the daemon's shadow values correct when a
+# parameter is moved with the mouse instead of the controller.
+FX_PARAM_VALUE n/fxparam/@/value
+FX_PARAM_VALUE s/fxparam/@/value/str
+FX_PARAM_NAME s/fxparam/@/name
+
+# REQUIRED, not decoration. REAPER sends these immediately before the burst of
+# parameter values that follows a focus change, and they are the only thing
+# that says which plugin the burst is about. Without them the daemon cannot
+# tell a burst for the newly focused FX from one for the FX it is still driving
+# -- and adopting the wrong one leaves every LED ring showing another plugin's
+# parameters. See Engine._feedback_is_for_focused_fx.
+FX_NAME s/fx/name
+FX_NUMBER s/fx/number/str

@@ -1,0 +1,331 @@
+496.049  BA 01 01   CC  ch11 cc=1   val=1    (rel +1)
+496.077  BA 01 04   CC  ch11 cc=1   val=4    (rel +4)
+496.106  BA 01 07   CC  ch11 cc=1   val=7    (rel +7)
+496.130  BA 01 0A   CC  ch11 cc=1   val=10 
+496.149  BA 01 0D   CC  ch11 cc=1   val=13 
+496.169  BA 01 10   CC  ch11 cc=1   val=16 
+496.188  BA 01 13   CC  ch11 cc=1   val=19 
+496.205  BA 01 16   CC  ch11 cc=1   val=22 
+496.225  BA 01 19   CC  ch11 cc=1   val=25 
+496.247  BA 01 1C   CC  ch11 cc=1   val=28 
+496.269  BA 01 1F   CC  ch11 cc=1   val=31 
+496.302  BA 01 22   CC  ch11 cc=1   val=34 
+496.362  BA 01 23   CC  ch11 cc=1   val=35 
+496.606  BA 01 22   CC  ch11 cc=1   val=34 
+496.654  BA 01 20   CC  ch11 cc=1   val=32 
+496.689  BA 01 1D   CC  ch11 cc=1   val=29 
+496.715  BA 01 1A   CC  ch11 cc=1   val=26 
+496.736  BA 01 17   CC  ch11 cc=1   val=23 
+496.758  BA 01 14   CC  ch11 cc=1   val=20 
+496.778  BA 01 11   CC  ch11 cc=1   val=17 
+496.800  BA 01 0E   CC  ch11 cc=1   val=14 
+496.819  BA 01 0B   CC  ch11 cc=1   val=11 
+496.838  BA 01 08   CC  ch11 cc=1   val=8  
+496.860  BA 01 05   CC  ch11 cc=1   val=5    (rel +5)
+496.882  BA 01 02   CC  ch11 cc=1   val=2    (rel +2)
+496.905  BA 01 00   CC  ch11 cc=1   val=0    (rel +0)
+496.941  BA 01 00   CC  ch11 cc=1   val=0    (rel +0)
+498.343  BA 02 01   CC  ch11 cc=2   val=1    (rel +1)
+498.364  BA 02 04   CC  ch11 cc=2   val=4    (rel +4)
+498.383  BA 02 07   CC  ch11 cc=2   val=7    (rel +7)
+498.402  BA 02 0A   CC  ch11 cc=2   val=10 
+498.425  BA 02 0D   CC  ch11 cc=2   val=13 
+498.451  BA 02 10   CC  ch11 cc=2   val=16 
+498.471  BA 02 13   CC  ch11 cc=2   val=19 
+498.490  BA 02 16   CC  ch11 cc=2   val=22 
+498.507  BA 02 19   CC  ch11 cc=2   val=25 
+498.528  BA 02 1C   CC  ch11 cc=2   val=28 
+498.553  BA 02 1F   CC  ch11 cc=2   val=31 
+498.584  BA 02 22   CC  ch11 cc=2   val=34 
+498.633  BA 02 24   CC  ch11 cc=2   val=36 
+498.746  BA 02 23   CC  ch11 cc=2   val=35 
+498.793  BA 02 21   CC  ch11 cc=2   val=33 
+498.820  BA 02 1E   CC  ch11 cc=2   val=30 
+498.848  BA 02 1B   CC  ch11 cc=2   val=27 
+498.873  BA 02 18   CC  ch11 cc=2   val=24 
+498.897  BA 02 15   CC  ch11 cc=2   val=21 
+498.916  BA 02 12   CC  ch11 cc=2   val=18 
+498.938  BA 02 0F   CC  ch11 cc=2   val=15 
+498.959  BA 02 0C   CC  ch11 cc=2   val=12 
+498.976  BA 02 09   CC  ch11 cc=2   val=9  
+498.996  BA 02 06   CC  ch11 cc=2   val=6    (rel +6)
+499.020  BA 02 03   CC  ch11 cc=2   val=3    (rel +3)
+499.047  BA 02 00   CC  ch11 cc=2   val=0    (rel +0)
+499.685  BA 03 01   CC  ch11 cc=3   val=1    (rel +1)
+499.709  BA 03 04   CC  ch11 cc=3   val=4    (rel +4)
+499.728  BA 03 07   CC  ch11 cc=3   val=7    (rel +7)
+499.748  BA 03 0A   CC  ch11 cc=3   val=10 
+499.773  BA 03 0D   CC  ch11 cc=3   val=13 
+499.797  BA 03 10   CC  ch11 cc=3   val=16 
+499.816  BA 03 13   CC  ch11 cc=3   val=19 
+499.834  BA 03 16   CC  ch11 cc=3   val=22 
+499.855  BA 03 19   CC  ch11 cc=3   val=25 
+499.883  BA 03 1C   CC  ch11 cc=3   val=28 
+499.918  BA 03 1F   CC  ch11 cc=3   val=31 
+499.956  BA 03 22   CC  ch11 cc=3   val=34 
+500.120  BA 03 21   CC  ch11 cc=3   val=33 
+500.144  BA 03 1E   CC  ch11 cc=3   val=30 
+500.168  BA 03 1B   CC  ch11 cc=3   val=27 
+500.189  BA 03 18   CC  ch11 cc=3   val=24 
+500.213  BA 03 15   CC  ch11 cc=3   val=21 
+500.235  BA 03 12   CC  ch11 cc=3   val=18 
+500.261  BA 03 0F   CC  ch11 cc=3   val=15 
+500.285  BA 03 0C   CC  ch11 cc=3   val=12 
+500.308  BA 03 09   CC  ch11 cc=3   val=9  
+500.328  BA 03 06   CC  ch11 cc=3   val=6    (rel +6)
+500.355  BA 03 03   CC  ch11 cc=3   val=3    (rel +3)
+500.891  BA 04 01   CC  ch11 cc=4   val=1    (rel +1)
+500.912  BA 04 04   CC  ch11 cc=4   val=4    (rel +4)
+500.932  BA 04 07   CC  ch11 cc=4   val=7    (rel +7)
+500.958  BA 04 0A   CC  ch11 cc=4   val=10 
+500.982  BA 04 0D   CC  ch11 cc=4   val=13 
+501.004  BA 04 10   CC  ch11 cc=4   val=16 
+501.018  BA 04 13   CC  ch11 cc=4   val=19 
+501.036  BA 04 16   CC  ch11 cc=4   val=22 
+501.051  BA 04 1A   CC  ch11 cc=4   val=26 
+501.077  BA 04 1D   CC  ch11 cc=4   val=29 
+501.109  BA 04 20   CC  ch11 cc=4   val=32 
+501.252  BA 04 1F   CC  ch11 cc=4   val=31 
+501.275  BA 04 1C   CC  ch11 cc=4   val=28 
+501.300  BA 04 19   CC  ch11 cc=4   val=25 
+501.322  BA 04 16   CC  ch11 cc=4   val=22 
+501.343  BA 04 13   CC  ch11 cc=4   val=19 
+501.365  BA 04 10   CC  ch11 cc=4   val=16 
+501.384  BA 04 0D   CC  ch11 cc=4   val=13 
+501.407  BA 04 0A   CC  ch11 cc=4   val=10 
+501.429  BA 04 07   CC  ch11 cc=4   val=7    (rel +7)
+501.457  BA 04 04   CC  ch11 cc=4   val=4    (rel +4)
+501.482  BA 04 01   CC  ch11 cc=4   val=1    (rel +1)
+501.532  BA 04 00   CC  ch11 cc=4   val=0    (rel +0)
+502.175  BA 05 01   CC  ch11 cc=5   val=1    (rel +1)
+502.188  BA 05 06   CC  ch11 cc=5   val=6    (rel +6)
+502.199  BA 05 0B   CC  ch11 cc=5   val=11 
+502.212  BA 05 0F   CC  ch11 cc=5   val=15 
+502.229  BA 05 13   CC  ch11 cc=5   val=19 
+502.255  BA 05 16   CC  ch11 cc=5   val=22 
+502.291  BA 05 19   CC  ch11 cc=5   val=25 
+502.321  BA 05 1C   CC  ch11 cc=5   val=28 
+502.344  BA 05 1F   CC  ch11 cc=5   val=31 
+502.366  BA 05 22   CC  ch11 cc=5   val=34 
+502.390  BA 05 25   CC  ch11 cc=5   val=37 
+502.424  BA 05 28   CC  ch11 cc=5   val=40 
+502.582  BA 05 27   CC  ch11 cc=5   val=39 
+502.604  BA 05 24   CC  ch11 cc=5   val=36 
+502.624  BA 05 21   CC  ch11 cc=5   val=33 
+502.645  BA 05 1E   CC  ch11 cc=5   val=30 
+502.674  BA 05 1B   CC  ch11 cc=5   val=27 
+503.279  BA 06 01   CC  ch11 cc=6   val=1    (rel +1)
+503.290  BA 06 06   CC  ch11 cc=6   val=6    (rel +6)
+503.304  BA 06 0B   CC  ch11 cc=6   val=11 
+503.315  BA 06 10   CC  ch11 cc=6   val=16 
+503.328  BA 06 14   CC  ch11 cc=6   val=20 
+503.343  BA 06 18   CC  ch11 cc=6   val=24 
+503.360  BA 06 1B   CC  ch11 cc=6   val=27 
+503.380  BA 06 1E   CC  ch11 cc=6   val=30 
+503.399  BA 06 21   CC  ch11 cc=6   val=33 
+503.418  BA 06 24   CC  ch11 cc=6   val=36 
+503.440  BA 06 27   CC  ch11 cc=6   val=39 
+503.475  BA 06 2A   CC  ch11 cc=6   val=42 
+503.571  BA 06 29   CC  ch11 cc=6   val=41 
+503.590  BA 06 26   CC  ch11 cc=6   val=38 
+503.608  BA 06 23   CC  ch11 cc=6   val=35 
+503.623  BA 06 1F   CC  ch11 cc=6   val=31 
+503.640  BA 06 1B   CC  ch11 cc=6   val=27 
+503.653  BA 06 17   CC  ch11 cc=6   val=23 
+503.669  BA 06 13   CC  ch11 cc=6   val=19 
+503.686  BA 06 10   CC  ch11 cc=6   val=16 
+503.703  BA 06 0D   CC  ch11 cc=6   val=13 
+503.722  BA 06 0A   CC  ch11 cc=6   val=10 
+503.737  BA 06 07   CC  ch11 cc=6   val=7    (rel +7)
+503.755  BA 06 04   CC  ch11 cc=6   val=4    (rel +4)
+503.772  BA 06 01   CC  ch11 cc=6   val=1    (rel +1)
+504.187  BA 07 01   CC  ch11 cc=7   val=1    (rel +1)
+504.204  BA 07 04   CC  ch11 cc=7   val=4    (rel +4)
+504.219  BA 07 08   CC  ch11 cc=7   val=8  
+504.234  BA 07 0C   CC  ch11 cc=7   val=12 
+504.250  BA 07 10   CC  ch11 cc=7   val=16 
+504.267  BA 07 13   CC  ch11 cc=7   val=19 
+504.283  BA 07 17   CC  ch11 cc=7   val=23 
+504.295  BA 07 1C   CC  ch11 cc=7   val=28 
+504.306  BA 07 21   CC  ch11 cc=7   val=33 
+504.317  BA 07 26   CC  ch11 cc=7   val=38 
+504.334  BA 07 2A   CC  ch11 cc=7   val=42 
+504.356  BA 07 2D   CC  ch11 cc=7   val=45 
+504.387  BA 07 30   CC  ch11 cc=7   val=48 
+504.511  BA 07 2F   CC  ch11 cc=7   val=47 
+504.533  BA 07 2C   CC  ch11 cc=7   val=44 
+504.550  BA 07 29   CC  ch11 cc=7   val=41 
+504.570  BA 07 26   CC  ch11 cc=7   val=38 
+504.585  BA 07 22   CC  ch11 cc=7   val=34 
+504.603  BA 07 1F   CC  ch11 cc=7   val=31 
+504.618  BA 07 1C   CC  ch11 cc=7   val=28 
+504.637  BA 07 19   CC  ch11 cc=7   val=25 
+504.652  BA 07 15   CC  ch11 cc=7   val=21 
+504.678  BA 07 12   CC  ch11 cc=7   val=18 
+505.558  BA 08 01   CC  ch11 cc=8   val=1    (rel +1)
+505.584  BA 08 04   CC  ch11 cc=8   val=4    (rel +4)
+505.604  BA 08 07   CC  ch11 cc=8   val=7    (rel +7)
+505.628  BA 08 0A   CC  ch11 cc=8   val=10 
+505.657  BA 08 0D   CC  ch11 cc=8   val=13 
+505.682  BA 08 10   CC  ch11 cc=8   val=16 
+505.699  BA 08 13   CC  ch11 cc=8   val=19 
+505.719  BA 08 16   CC  ch11 cc=8   val=22 
+505.738  BA 08 19   CC  ch11 cc=8   val=25 
+505.767  BA 08 1C   CC  ch11 cc=8   val=28 
+505.805  BA 08 1F   CC  ch11 cc=8   val=31 
+505.865  BA 08 20   CC  ch11 cc=8   val=32 
+506.113  BA 08 1F   CC  ch11 cc=8   val=31 
+506.170  BA 08 1E   CC  ch11 cc=8   val=30 
+506.220  BA 08 1C   CC  ch11 cc=8   val=28 
+506.257  BA 08 19   CC  ch11 cc=8   val=25 
+506.287  BA 08 16   CC  ch11 cc=8   val=22 
+506.315  BA 08 13   CC  ch11 cc=8   val=19 
+506.341  BA 08 10   CC  ch11 cc=8   val=16 
+506.371  BA 08 0D   CC  ch11 cc=8   val=13 
+506.419  BA 08 0B   CC  ch11 cc=8   val=11 
+506.461  BA 08 09   CC  ch11 cc=8   val=9  
+506.504  BA 08 07   CC  ch11 cc=8   val=7    (rel +7)
+506.551  BA 08 05   CC  ch11 cc=8   val=5    (rel +5)
+516.893  9A 00 7F   note-on  ch11 note=0   vel=127
+517.060  8A 00 00   note-off ch11 note=0   vel=0
+517.656  9A 01 7F   note-on  ch11 note=1   vel=127
+517.840  8A 01 00   note-off ch11 note=1   vel=0
+518.347  9A 02 7F   note-on  ch11 note=2   vel=127
+518.551  8A 02 00   note-off ch11 note=2   vel=0
+518.999  9A 03 7F   note-on  ch11 note=3   vel=127
+519.192  8A 03 00   note-off ch11 note=3   vel=0
+519.673  9A 04 7F   note-on  ch11 note=4   vel=127
+519.844  8A 04 00   note-off ch11 note=4   vel=0
+520.349  9A 05 7F   note-on  ch11 note=5   vel=127
+520.574  8A 05 00   note-off ch11 note=5   vel=0
+521.065  9A 06 7F   note-on  ch11 note=6   vel=127
+521.246  8A 06 00   note-off ch11 note=6   vel=0
+524.151  9A 07 7F   note-on  ch11 note=7   vel=127
+524.356  8A 07 00   note-off ch11 note=7   vel=0
+525.419  9A 08 7F   note-on  ch11 note=8   vel=127
+525.898  9A 09 7F   note-on  ch11 note=9   vel=127
+526.374  9A 0A 7F   note-on  ch11 note=10  vel=127
+526.807  9A 0B 7F   note-on  ch11 note=11  vel=127
+527.237  9A 0C 7F   note-on  ch11 note=12  vel=127
+527.672  9A 0D 7F   note-on  ch11 note=13  vel=127
+528.146  9A 0E 7F   note-on  ch11 note=14  vel=127
+528.535  9A 0F 7F   note-on  ch11 note=15  vel=127
+529.567  9A 10 7F   note-on  ch11 note=16  vel=127
+529.957  9A 11 7F   note-on  ch11 note=17  vel=127
+530.379  9A 12 7F   note-on  ch11 note=18  vel=127
+530.769  9A 13 7F   note-on  ch11 note=19  vel=127
+531.173  9A 14 7F   note-on  ch11 note=20  vel=127
+531.627  9A 15 7F   note-on  ch11 note=21  vel=127
+532.094  9A 16 7F   note-on  ch11 note=22  vel=127
+532.581  9A 17 7F   note-on  ch11 note=23  vel=127
+533.101  BA 09 44   CC  ch11 cc=9   val=68   (rel -4)
+533.116  BA 09 45   CC  ch11 cc=9   val=69   (rel -5)
+533.124  BA 09 46   CC  ch11 cc=9   val=70   (rel -6)
+533.135  BA 09 47   CC  ch11 cc=9   val=71   (rel -7)
+533.142  BA 09 48   CC  ch11 cc=9   val=72 
+533.149  BA 09 49   CC  ch11 cc=9   val=73 
+533.155  BA 09 4A   CC  ch11 cc=9   val=74 
+533.161  BA 09 4B   CC  ch11 cc=9   val=75 
+533.166  BA 09 4C   CC  ch11 cc=9   val=76 
+533.172  BA 09 4D   CC  ch11 cc=9   val=77 
+533.177  BA 09 4E   CC  ch11 cc=9   val=78 
+533.179  BA 09 4F   CC  ch11 cc=9   val=79 
+533.183  BA 09 50   CC  ch11 cc=9   val=80 
+533.190  BA 09 51   CC  ch11 cc=9   val=81 
+533.190  BA 09 52   CC  ch11 cc=9   val=82 
+533.199  BA 09 53   CC  ch11 cc=9   val=83 
+533.199  BA 09 54   CC  ch11 cc=9   val=84 
+533.205  BA 09 56   CC  ch11 cc=9   val=86 
+533.209  BA 09 57   CC  ch11 cc=9   val=87 
+533.214  BA 09 58   CC  ch11 cc=9   val=88 
+533.220  BA 09 5A   CC  ch11 cc=9   val=90 
+533.224  BA 09 5B   CC  ch11 cc=9   val=91 
+533.231  BA 09 5D   CC  ch11 cc=9   val=93 
+533.235  BA 09 5E   CC  ch11 cc=9   val=94 
+533.242  BA 09 5F   CC  ch11 cc=9   val=95 
+533.244  BA 09 60   CC  ch11 cc=9   val=96 
+533.250  BA 09 61   CC  ch11 cc=9   val=97 
+533.252  BA 09 62   CC  ch11 cc=9   val=98 
+533.256  BA 09 63   CC  ch11 cc=9   val=99 
+533.263  BA 09 64   CC  ch11 cc=9   val=100
+533.267  BA 09 65   CC  ch11 cc=9   val=101
+533.269  BA 09 66   CC  ch11 cc=9   val=102
+533.274  BA 09 67   CC  ch11 cc=9   val=103
+533.280  BA 09 68   CC  ch11 cc=9   val=104
+533.285  BA 09 69   CC  ch11 cc=9   val=105
+533.289  BA 09 6A   CC  ch11 cc=9   val=106
+533.296  BA 09 6B   CC  ch11 cc=9   val=107
+533.300  BA 09 6C   CC  ch11 cc=9   val=108
+533.304  BA 09 6D   CC  ch11 cc=9   val=109
+533.311  BA 09 6E   CC  ch11 cc=9   val=110
+533.319  BA 09 6F   CC  ch11 cc=9   val=111
+533.321  BA 09 70   CC  ch11 cc=9   val=112
+533.328  BA 09 71   CC  ch11 cc=9   val=113
+533.334  BA 09 72   CC  ch11 cc=9   val=114
+533.343  BA 09 73   CC  ch11 cc=9   val=115
+533.351  BA 09 74   CC  ch11 cc=9   val=116
+533.360  BA 09 75   CC  ch11 cc=9   val=117
+533.371  BA 09 76   CC  ch11 cc=9   val=118
+533.381  BA 09 77   CC  ch11 cc=9   val=119
+533.394  BA 09 78   CC  ch11 cc=9   val=120
+533.416  BA 09 79   CC  ch11 cc=9   val=121
+533.517  BA 09 78   CC  ch11 cc=9   val=120
+533.527  BA 09 77   CC  ch11 cc=9   val=119
+533.536  BA 09 76   CC  ch11 cc=9   val=118
+533.544  BA 09 75   CC  ch11 cc=9   val=117
+533.551  BA 09 74   CC  ch11 cc=9   val=116
+533.559  BA 09 73   CC  ch11 cc=9   val=115
+533.566  BA 09 72   CC  ch11 cc=9   val=114
+533.570  BA 09 71   CC  ch11 cc=9   val=113
+533.577  BA 09 70   CC  ch11 cc=9   val=112
+533.581  BA 09 6F   CC  ch11 cc=9   val=111
+533.585  BA 09 6E   CC  ch11 cc=9   val=110
+533.592  BA 09 6D   CC  ch11 cc=9   val=109
+533.596  BA 09 6C   CC  ch11 cc=9   val=108
+533.601  BA 09 6B   CC  ch11 cc=9   val=107
+533.605  BA 09 6A   CC  ch11 cc=9   val=106
+533.611  BA 09 69   CC  ch11 cc=9   val=105
+533.614  BA 09 68   CC  ch11 cc=9   val=104
+533.618  BA 09 67   CC  ch11 cc=9   val=103
+533.620  BA 09 66   CC  ch11 cc=9   val=102
+533.626  BA 09 65   CC  ch11 cc=9   val=101
+533.629  BA 09 64   CC  ch11 cc=9   val=100
+533.635  BA 09 62   CC  ch11 cc=9   val=98 
+533.641  BA 09 61   CC  ch11 cc=9   val=97 
+533.644  BA 09 60   CC  ch11 cc=9   val=96 
+533.646  BA 09 5F   CC  ch11 cc=9   val=95 
+533.655  BA 09 5D   CC  ch11 cc=9   val=93 
+533.659  BA 09 5B   CC  ch11 cc=9   val=91 
+533.665  BA 09 59   CC  ch11 cc=9   val=89 
+533.670  BA 09 58   CC  ch11 cc=9   val=88 
+533.674  BA 09 57   CC  ch11 cc=9   val=87 
+533.678  BA 09 56   CC  ch11 cc=9   val=86 
+533.680  BA 09 55   CC  ch11 cc=9   val=85 
+533.683  BA 09 54   CC  ch11 cc=9   val=84 
+533.687  BA 09 53   CC  ch11 cc=9   val=83 
+533.689  BA 09 52   CC  ch11 cc=9   val=82 
+533.693  BA 09 51   CC  ch11 cc=9   val=81 
+533.698  BA 09 4F   CC  ch11 cc=9   val=79 
+533.705  BA 09 4D   CC  ch11 cc=9   val=77 
+533.711  BA 09 4B   CC  ch11 cc=9   val=75 
+533.713  BA 09 4A   CC  ch11 cc=9   val=74 
+533.718  BA 09 49   CC  ch11 cc=9   val=73 
+533.720  BA 09 48   CC  ch11 cc=9   val=72 
+533.726  BA 09 46   CC  ch11 cc=9   val=70   (rel -6)
+533.733  BA 09 44   CC  ch11 cc=9   val=68   (rel -4)
+533.739  BA 09 42   CC  ch11 cc=9   val=66   (rel -2)
+533.746  BA 09 41   CC  ch11 cc=9   val=65   (rel -1)
+533.748  BA 09 40   CC  ch11 cc=9   val=64 
+533.750  BA 09 3F   CC  ch11 cc=9   val=63 
+533.754  BA 09 3E   CC  ch11 cc=9   val=62 
+533.761  BA 09 3C   CC  ch11 cc=9   val=60 
+533.765  BA 09 3B   CC  ch11 cc=9   val=59 
+533.771  BA 09 39   CC  ch11 cc=9   val=57 
+533.776  BA 09 38   CC  ch11 cc=9   val=56 
+533.782  BA 09 36   CC  ch11 cc=9   val=54 
+533.789  BA 09 35   CC  ch11 cc=9   val=53 
+533.793  BA 09 34   CC  ch11 cc=9   val=52 
+533.795  BA 09 33   CC  ch11 cc=9   val=51 
+533.799  BA 09 32   CC  ch11 cc=9   val=50 
+533.804  BA 09 31   CC  ch11 cc=9   val=49 
+533.812  BA 09 30   CC  ch11 cc=9   val=48 
