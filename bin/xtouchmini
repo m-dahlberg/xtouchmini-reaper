@@ -1,0 +1,19 @@
+#!/bin/sh
+# Launcher for the X-Touch Mini bridge.
+#
+# This lives inside the checkout and resolves the checkout from its own
+# location, so PYTHONPATH is never an absolute path baked in at install time
+# and the checkout can be renamed or moved. ~/.local/bin/xtouchmini is a
+# symlink to this file; re-run install.sh to repoint it after a move.
+set -eu
+
+self=$(readlink -f "$0")
+here=$(dirname "$(dirname "$self")")
+
+if [ ! -d "$here/xtouchmini" ]; then
+    echo "xtouchmini: no xtouchmini package under $here" >&2
+    echo "  the checkout has moved or is incomplete -- re-run install.sh from it" >&2
+    exit 127
+fi
+
+PYTHONPATH="$here${PYTHONPATH:+:$PYTHONPATH}" exec /usr/bin/python3 -m xtouchmini "$@"

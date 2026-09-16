@@ -126,6 +126,13 @@ not something anyone adjusts twice.
 ./install.sh
 ```
 
+The launcher it puts in `~/.local/bin` is a symlink to `bin/xtouchmini` inside
+this checkout, which works out its own location and sets `PYTHONPATH` from it.
+Nothing records an absolute path to the checkout, so you can rename or move it —
+only the symlink needs repointing, and re-running `./install.sh` does that. A
+moved checkout gives a clear error rather than a cryptic
+`No module named xtouchmini` restart loop.
+
 Then four manual steps inside REAPER, which `install.sh` prints:
 
 1. **Free the device** — Preferences → Audio → MIDI Devices → X-TOUCH MINI →
