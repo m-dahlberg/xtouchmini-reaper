@@ -15,6 +15,23 @@ from __future__ import annotations
 import rtmidi
 
 
+def _free(*ports) -> None:
+    """Release rtmidi handles now, not on garbage collection.
+
+    python-rtmidi (1.5.8 at least) does not release the ALSA sequencer client
+    when the object is collected, so every throwaway MidiIn() leaks one. ALSA
+    allows only 64 user clients, and a once-a-second leak exhausts them in about
+    a minute; after that, constructing any MidiIn/MidiOut raises "error creating
+    ALSA sequencer client object" and the daemon dies.
+    """
+    for port in ports:
+        if port is not None:
+            try:
+                port.delete()
+            except Exception:           # noqa: BLE001 -- freeing must not throw
+                pass
+
+
 class DeviceGone(OSError):
     """The device disappeared; the caller should go back to waiting for it."""
 
@@ -29,7 +46,11 @@ def _match(ports: list[str], needle: str) -> int | None:
 
 def find(port_match: str) -> str | None:
     """The full name of the matching input port, or None."""
-    ports = rtmidi.MidiIn().get_ports()
+    probe = rtmidi.MidiIn()
+    try:
+        ports = probe.get_ports()
+    finally:
+        _free(probe)
     index = _match(ports, port_match)
     return ports[index] if index is not None else None
 
@@ -39,6 +60,7 @@ class Device:
         self.port_match = port_match
         self._in: rtmidi.MidiIn | None = None
         self._out: rtmidi.MidiOut | None = None
+        self._probe: rtmidi.MidiIn | None = None    # reused by alive()
         self.name = ""
 
     @property
@@ -51,6 +73,7 @@ class Device:
         in_index = _match(midi_in.get_ports(), self.port_match)
         out_index = _match(midi_out.get_ports(), self.port_match)
         if in_index is None or out_index is None:
+            _free(midi_in, midi_out)
             return False
         try:
             midi_in.open_port(in_index)
@@ -58,6 +81,7 @@ class Device:
         except (rtmidi.SystemError, rtmidi.InvalidPortError, OSError):
             # Almost always REAPER holding the device: it takes ALSA rawmidi
             # exclusively when the X-Touch is enabled in its MIDI prefs.
+            _free(midi_in, midi_out)
             return False
         midi_in.ignore_types(sysex=True, timing=True, active_sense=True)
         self._in, self._out = midi_in, midi_out
@@ -71,7 +95,8 @@ class Device:
                     port.close_port()
                 except Exception:       # noqa: BLE001 -- closing must not throw
                     pass
-        self._in = self._out = None
+        _free(self._in, self._out, self._probe)
+        self._in = self._out = self._probe = None
         self.name = ""
 
     def alive(self) -> bool:
@@ -91,7 +116,11 @@ class Device:
         """
         if self._in is None:
             return False
-        return self.name in rtmidi.MidiIn().get_ports()
+        # One long-lived client, not a fresh one per call: see _free().
+        # get_ports() re-enumerates ALSA every time, so reuse is safe.
+        if self._probe is None:
+            self._probe = rtmidi.MidiIn()
+        return self.name in self._probe.get_ports()
 
     def read(self) -> list[list[int]]:
         """Every message waiting right now."""
