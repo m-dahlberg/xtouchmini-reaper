@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=X-Touch Mini
+GenericName=Start the X-Touch Mini bridge
+Comment=Start the X-Touch Mini to REAPER bridge service
+Exec=sh -c "systemctl --user start xtouchmini.service && notify-send -i xtouchmini-faders 'X-Touch Mini' 'Bridge running' || notify-send -u critical -i dialog-error 'X-Touch Mini' 'Bridge failed to start, see: journalctl --user -u xtouchmini'"
+Icon=xtouchmini-faders
+Terminal=false
+Categories=AudioVideo;Audio;
+Keywords=xtouch;behringer;reaper;controller;mixer;faders;

@@ -56,6 +56,18 @@ sed "s|%h|$HOME|g" "$HERE/config/xtouchmini.service" > "$UNIT_DIR/xtouchmini.ser
 systemctl --user daemon-reload
 echo "installed $UNIT_DIR/xtouchmini.service (not started yet)"
 
+say "Desktop entry"
+APPS="${XDG_DATA_HOME:-$HOME/.local/share}/applications"
+ICONS="${XDG_DATA_HOME:-$HOME/.local/share}/icons/hicolor"
+mkdir -p "$APPS" "$ICONS/scalable/apps"
+install -m 0644 "$HERE/config/xtouchmini-faders.svg" "$ICONS/scalable/apps/xtouchmini-faders.svg"
+gtk-update-icon-cache -f -t "$ICONS" 2>/dev/null || true
+# Starts the service and confirms with a notification; there is no GUI to open,
+# the panel lives inside REAPER.
+install -m 0644 "$HERE/config/xtouchmini.desktop" "$APPS/xtouchmini.desktop"
+update-desktop-database "$APPS" 2>/dev/null || true
+echo "installed $APPS/xtouchmini.desktop"
+
 cat <<'NEXT'
 
 == Four manual steps remain, all inside REAPER

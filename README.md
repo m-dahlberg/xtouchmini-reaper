@@ -156,6 +156,10 @@ systemctl --user enable --now xtouchmini
 journalctl --user -u xtouchmini -f
 ```
 
+`install.sh` also adds **X-Touch Mini** to the app grid. It starts the service
+(if it is not already running) and confirms with a notification; there is no
+window to open, since the panel lives inside REAPER.
+
 ### One-time hardware setup (Windows)
 
 The encoders ship in **absolute** mode, which is unusable for endless knobs:
